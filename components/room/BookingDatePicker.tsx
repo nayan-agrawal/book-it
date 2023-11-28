@@ -1,9 +1,7 @@
-const BookingDatePicker = () => {
-    return (<div className="booking-card shadow p-4">
-        <p className="price-per-night"><b>$100</b> / night</p>
-        <hr />
-        <p className="mt-5 mb-3">Pick Check In & Check Out Date</p>
-    </div>)
-}
+import React from "react";
+
+const BookingDatePicker = ({ room }) => {
+  return <div>BookingDatePicker</div>;
+};
 
 export default BookingDatePicker;

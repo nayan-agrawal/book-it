@@ -1,13 +1,16 @@
 import Search from "@/components/Search";
+import React from "react";
 
 export const metadata = {
-    title: 'Search Rooms'
-}
+  title: "Search Rooms",
+};
 
 const SearchPage = () => {
-    return <div>
-        <Search />
+  return (
+    <div>
+      <Search />
     </div>
-}
+  );
+};
 
 export default SearchPage;
