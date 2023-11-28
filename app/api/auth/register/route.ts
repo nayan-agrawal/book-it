@@ -11,6 +11,6 @@ dbConnect();
 
 router.post(registerUser);
 
-export async function POST(request: NextRequest, ctx: RequestContext) {
+export async function POST(request: NextRequest, ctx: RequestContext): Promise<any> {
   return router.run(request, ctx);
 }

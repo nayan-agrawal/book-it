@@ -16,10 +16,10 @@ dbConnect();
 router.use(isAuthenticatedUser, authorizeRoles("admin")).get(allAdminRooms);
 router.use(isAuthenticatedUser, authorizeRoles("admin")).post(newRoom);
 
-export async function GET(request: NextRequest, ctx: RequestContext) {
+export async function GET(request: NextRequest, ctx: RequestContext): Promise<any> {
   return router.run(request, ctx);
 }
 
-export async function POST(request: NextRequest, ctx: RequestContext) {
+export async function POST(request: NextRequest, ctx: RequestContext): Promise<any> {
   return router.run(request, ctx);
 }

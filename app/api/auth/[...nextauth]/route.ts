@@ -1,9 +1,16 @@
 import dbConnect from "@/backend/config/dbConnect";
 import User, { IUser } from "@/backend/models/user";
-import { NextApiRequest, NextApiResponse } from "next";
 import NextAuth from "next-auth";
 import CredentialsProvider from "next-auth/providers/credentials";
 import bcrypt from "bcryptjs";
+import { NextApiRequest, NextApiResponse } from 'next';
+
+type NextApiRequestWithFormData = NextApiRequest &
+    Request & {
+  files: any[];
+};
+
+type NextApiResponseCustom = NextApiResponse & Response;
 
 type Credentials = {
   email: string;
@@ -14,7 +21,7 @@ type Token = {
   user: IUser;
 };
 
-async function auth(req: NextApiRequest, res: NextApiResponse) {
+async function auth(req: NextApiRequestWithFormData, res: NextApiResponseCustom) {
   return await NextAuth(req, res, {
     session: {
       strategy: "jwt",

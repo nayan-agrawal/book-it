@@ -22,6 +22,6 @@ dbConnect();
 
 router.use(isAuthenticatedUser, authorizeRoles("admin")).put(deleteRoomImage);
 
-export async function PUT(request: NextRequest, ctx: RequestContext) {
+export async function PUT(request: NextRequest, ctx: RequestContext): Promise<any> {
   return router.run(request, ctx);
 }

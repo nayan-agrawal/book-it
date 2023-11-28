@@ -5,7 +5,7 @@ const nextConfig = {
     DB_LOCAL_URI: "mongodb+srv://nayan:crAkcpwx98xR9Bq9@bookit.ubqjygm.mongodb.net/",
     DB_URI: "mongodb+srv://nayan:crAkcpwx98xR9Bq9@bookit.ubqjygm.mongodb.net/",
 
-    STRIPE_WEBHOOK_SECRET: "whsec_981f603424ae6a8d5e7ca8c6851bdc7351e1c4d38989c45dea1d98466d45fef4",
+    STRIPE_WEBHOOK_SECRET: "whsec_SoRi3A8qYmPKhbeoiMfjpzFNH4pfFBil",
 
     STRIPE_SECRET_KEY: "sk_test_51Hu1mXKnau85Qpko2ZaCexs82DRp6xMOvNnIfjfRG6oTyNr3fHtTUfizNxm2xDZQPCdH7xZu6OnCmWYt0WiySnwo00DULtinao",
 

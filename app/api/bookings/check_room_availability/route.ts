@@ -11,6 +11,6 @@ dbConnect();
 
 router.get(checkRoomBookingAvailability);
 
-export async function GET(request: NextRequest, ctx: RequestContext) {
+export async function GET(request: NextRequest, ctx: RequestContext): Promise<any> {
   return router.run(request, ctx);
 }
